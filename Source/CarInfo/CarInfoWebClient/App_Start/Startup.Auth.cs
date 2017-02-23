@@ -54,9 +54,9 @@ namespace CarInfoWebClient
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "387004065010121",
+               appSecret: "bd5fbe71e6fc9829f2d88520133e1b29");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
