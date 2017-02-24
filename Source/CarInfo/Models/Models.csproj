@@ -49,7 +49,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Car.cs" />
+    <Compile Include="Contracts\ICar.cs" />
+    <Compile Include="Contracts\IDriver.cs" />
+    <Compile Include="Contracts\IExpirationDate.cs" />
+    <Compile Include="Driver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

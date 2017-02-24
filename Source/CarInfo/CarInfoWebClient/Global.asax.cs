@@ -1,5 +1,7 @@
-﻿using System;
+﻿using CarInfoWebClient;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -12,6 +14,12 @@ namespace CarInfoWebClient
     {
         protected void Application_Start()
         {
+            ViewEngines.Engines.Clear();
+            ViewEngines.Engines.Add(new RazorViewEngine());
+
+            //Database.SetInitializer(new MigrateDatabaseToLatestVersion<UltraPlayDbContext, Configuration>());
+            //Startup.InitDb();
+
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
