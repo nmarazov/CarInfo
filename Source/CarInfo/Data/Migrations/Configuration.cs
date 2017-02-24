@@ -1,15 +1,14 @@
 namespace Data.Migrations
 {
-    using System;
-    using System.Data.Entity;
     using System.Data.Entity.Migrations;
-    using System.Linq;
 
     internal sealed class Configuration : DbMigrationsConfiguration<Data.CarInfoDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
+            AutomaticMigrationDataLossAllowed = true;
+            //ContextKey = "Data.CarInfoDbContext";
         }
 
         protected override void Seed(Data.CarInfoDbContext context)
